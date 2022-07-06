@@ -20,13 +20,17 @@ img {
   padding: 10px;
 }
 
+h1 {
+  font-size: x-large;
+}
+
 h1,
 h2 {
   margin-bottom: 15px;
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 0 30px;
 }
@@ -68,16 +72,19 @@ h2 {
 
 .profile {
   min-height: 400px;
+  min-width: 400px;
 }
 
-.profile h1 {
+h1 {
   font-size: xx-large;
   text-decoration: underline;
   line-height: 1.2;
+  justify-content: center;
 }
 
 .profile img {
-  flex: 1;
+  display: flex;
+  flex-direction: column;
   max-width: 300px;
   margin-right: 50px;
   margin-top: 20px;
@@ -90,19 +97,62 @@ h2 {
   justify-content: space-between;
 }
 
+.project a {
+  color: black;
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 4px;
+}
+
 .projects .container {
   display: flex;
+  min-width: 500px;
+  max-width: 1500px;
+  min-height: 300px;
   justify-content: space-between;
 }
 
 .project {
-  flex 1;
   background: #f69d3c;
   color: black;
   border-radius: 10px;
-  margin: 20px 10px;
+  margin: 10px;
   box-shadow: 3px 3px 3px;
   padding: 15px 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
+.resume {
+  display: flex;
+  max-width: 100%;
+
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.contacts {
+  font-size: xx-large;
+  text-decoration: underline;
+  margin-top: 60px;
+}
+
+.contact li a {
+  color: black;
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.resume {
+  justify-content: center;
+  margin-top: 60px;
 }
 
 footer {
@@ -111,17 +161,19 @@ footer {
   font-size: small;
   font-weight: 100;
   justify-content: center;
+  background: #f69d3c;
 }
 
 @media (max-width: 768px) {
-  .profile .container {
+  .profile .container .project {
+    display: flex;
     flex-direction: column;
     padding-top: 20px;
     text-align: center;
   }
-}
 
-.projects .container {
-  display: block;
-  text-align: center;
+  .project .container .resume .contact {
+    text-align: center;
+    display: block;
+  }
 }
