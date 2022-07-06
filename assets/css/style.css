@@ -144,11 +144,14 @@ h1 {
 
 .contact li a {
   color: black;
-  list-style: none;
   text-decoration: none;
   font-size: 18px;
   flex-direction: row;
   justify-content: space-between;
+}
+
+li {
+  list-style: none;
 }
 
 .resume {
