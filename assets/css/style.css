@@ -43,7 +43,7 @@ h2 {
 .navbar a {
   color: black;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -52,11 +52,13 @@ h2 {
 }
 
 .name {
+  display: flex;
   font-size: 100px;
 }
 
 .navbar .container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   height: 100%;
@@ -129,7 +131,6 @@ h1 {
 .resume {
   display: flex;
   max-width: 100%;
-
   flex-direction: column;
   justify-content: center;
   text-align: center;
@@ -165,15 +166,15 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .profile .container .project {
-    display: flex;
+  .profile .container {
     flex-direction: column;
     padding-top: 20px;
     text-align: center;
   }
 
-  .project .container .resume .contact {
+  .projects .container {
     text-align: center;
+    flex-direction: column;
     display: block;
   }
 }
