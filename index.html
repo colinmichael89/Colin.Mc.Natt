@@ -9,54 +9,66 @@
     <title>My Portfolio</title>
   </head>
   <body>
-    <header>Colin McNatt</header>
-    <nav>
-      <a href="#">About Me</a>
-      <a href="#">Work</a>
-      <a href="#">Contact Me</a>
-      <a href="#">Resume</a>
+    <nav class="navbar">
+      <div class="container">
+        <div class="name">Colin McNatt</div>
+        <ul class="nav">
+          <li>
+            <a href="#">About Me</a>
+          </li>
+          <li>
+            <a href="#">Work</a>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
+          <li>
+            <a href="#">Resume</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <div class="bio">
-      <aside>
-        <img
-          class="colin"
-          src="./assets/images/colin.jpg"
-          alt="Profile picture"
-        />
-      </aside>
-      <aside>
-        <h2>About Me</h2>
-        <p>
-          Hello and welcome to my portfolio! My name is Colin McNatt and I live
-          in Denver, Colorado. I began my coding journey at the beginning of
-          2022 when I enrolled in a Coding Bootcamp at the University of Denver
-          (DU). I had always dreamed of becoming a web developer and through
-          this course I hope to make my dream a reality!
-        </p>
-      </aside>
+
+    <header class="profile">
+      <div class="container">
+        <div>
+          <h1>About Me</h1>
+          <p>
+            Hello and welcome to my portfolio! My name is Colin McNatt and I
+            live in Denver, Colorado. I began my coding journey at the beginning
+            of 2022 when I enrolled in a Coding Bootcamp at the University of
+            Denver (DU). I had always dreamed of becoming a web developer and
+            through this course I hope to make my dream a reality!
+          </p>
+        </div>
+        <img src="./assets/images/colin.jpg" alt="Picture of Colin" />
       </div>
-      <div class="projects">
-        <section class="card">
-          <header>My 1st Project</header>
-          <img src="./assets/images/camera.jpg" alt="Project 1" />
-          <p>blah blah</p>
-        </section>
-        <section class="card">
-          <header>My 2nd Project</header>
-          <img src="./assets/images/tablet.jpg" alt="Project 2" />
-          <p>blah blah</p>
-        </section>
-        <section class="card">
-          <header>My 3rd Project</header>
-          <img src="./assets/images/toilet-paper.jpg" alt="Project 3" />
-          <p>blah blah</p>
-        </section>
-        <section class="card">
-          <header>My 4th Project</header>
-          <img src="./assets/images/wooden-spoons.jpg" alt="Project 4" />
-          <p>blah blah</p>
-        </section>
+    </header>
+
+    <section class="projects">
+      <div class="container">
+        <div class="project">
+          <h2>Project 1</h2>
+          <p>
+            This is where my my first project will go.
+          </p>
+        </div>
+        <div class="project">
+          <h2>Project 2</h2>
+          <p>
+            This is where my second project will go.
+          </p>
+        </div>
+        <div class="project">
+          <h2>Project 3</h2>
+          <p>
+            This is where my third project will go.
+          </p>
+        </div>
       </div>
-    </main>
+
+      <footer>
+        <h2>This page was made with ❤ by Colin McNatt</h2>
+      </footer>
   </body>
 </html>
