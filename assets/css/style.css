@@ -141,9 +141,10 @@ h1 {
   padding: 15px 20px;
 }
 
-.contact {
+.contacts ul {
   display: flex;
-  flex-direction: column;
+  text-align: center;
+  justify-content: center;
 }
 
 .resume {
@@ -158,18 +159,18 @@ h1 {
   font-size: xx-large;
   text-decoration: underline;
   margin-top: 60px;
+  text-align: center;
 }
 
 .contact li a {
   color: black;
   text-decoration: none;
   font-size: 18px;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 li {
   list-style: none;
+  text-align: center;
 }
 
 .resume {
@@ -193,7 +194,7 @@ footer {
     text-align: center;
   }
 
-  .projects .container {
+  .projects .container .about-me {
     text-align: center;
     flex-direction: column;
     display: block;
